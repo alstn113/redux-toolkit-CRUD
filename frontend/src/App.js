@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Create from "./components/Create";
 import PostDetails from "./components/PostDetails";
 import NotFound from "./components/NotFound";
+import Sample from "./components/Sample";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route component={Home} exact path="/" />
           <Route component={Create} path="/create" />
           <Route component={PostDetails} path="/posts/:id" />
+          <Route component={Sample} path="/sample" />
           <Route component={NotFound} path="*" />
         </Switch>
       </div>
